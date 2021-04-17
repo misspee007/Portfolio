@@ -20,10 +20,6 @@ a:-webkit-any-link{
     text-decoration-style: dotted;
 }
 
-{
-    text-decoration: none;
-}
-
 .wrapper{
     width: 85%;
     margin: 10vh auto auto auto;
@@ -50,7 +46,7 @@ a:-webkit-any-link{
     top: 0;
     height: 100%;
     opacity: 0.2;
-    background-image:url(background_2.jpg);
+    background-image:url(background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -58,6 +54,8 @@ a:-webkit-any-link{
 
 .avatar-img{
     border-radius:50%;
+    width: 196px;
+    height: 196px;
 }
 
 .navbar ul{
@@ -156,8 +154,8 @@ figure.skill-icon {
     width: 100%;
     height: 2.5rem;
     margin: 1vh 0;
-    padding: 1rem;
-    font-size: 1em;
+    padding: 1em;
+    font-size: 0.9em;
 }
 
 textarea{
@@ -188,7 +186,6 @@ textarea{
 .copyright{
     position: relative;
     width: 100vw;
-    margin-top: 2vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -221,7 +218,7 @@ textarea{
 
 .footer-btn button:hover {
     cursor: pointer;
-    background-color: gray;
+    background-color: rgb(93, 106, 255);
     color: cornsilk;
 }
 
@@ -229,8 +226,15 @@ textarea{
     text-decoration: none;
 }
 
+.social-media{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(10, 10, 10);
+}
+
 .social-media a{
     text-decoration: none;
+    color: rgb(93, 106, 255);
     padding: 0.6em;
 }
 
@@ -276,24 +280,82 @@ textarea{
     }
 }
 
-/* @media screen and (min-width: 768px) {
-    
-}
-
-@media screen and (min-width: 992px) {
-    
-} */
-
 @media screen and (min-width: 1200px) {
+    body{
+        font-size: 2em;
+        max-width: 70%;
+        position: absolute;
+        top: 0;
+        left: 30vw;
+    }
+
+    .title{
+        font-size: 1.2em;
+    }
+
+    small{
+        font-size: 0.6em;
+    }
+
+    .avatar-img{
+        width: 250px;
+        height: 250px;
+    }
+
     .navbar ul{
+        background-color: rgba(20, 20, 20, 0.329);
+        color: grey;
         display: flex;
+        justify-content: space-evenly;
+        padding: 2rem;
+        font-size: 25px;
+    }
+
+    .hover a:hover{
+        color: rgb(93, 106, 255);
+    }
+
+    .sidebar::before{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30vw;
+    }
+
+    .home-cont{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30vw;
+        height: 80vh;
+        padding: 8rem;
     }
     
+    .wrapper{
+        /* margin-left: 35vw; */
+        /* max-width: 65%; */
+    }
+
     .link-btn:hover{
         cursor: pointer;
     }
 
+    .footer-input{
+        display: flex;
+        font-size: 0.9em;
+    }
+
+    .social-media{
+        background: none;
+    }
     .copyright p{
-        font-size: larger;
+        font-size: large;
+    }
+
+    .fixed_footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 30vw;
     }
 }
